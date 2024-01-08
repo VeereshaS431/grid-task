@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: inline-block;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 50px 150px 150px 50px;
+            gap: 10px;
+            margin-left: 180px;
+            margin-top: 30px;
+
+           
+        }
+        .box{
+            /* height: 100px;
+            width: 120px; */
+            /* border: 1px solid black; */
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .box:hover{
+            font-size: 40px;
+            color: rgb(34, 116, 188);
+        }
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgb(148, 15, 215);
+
+        }
+        .box1:hover{
+            background-color: rgb(91, 45, 113);
+        }
+        .box2{        
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: aqua;
+
+        }
+        .box2:hover{
+            background-color: rgb(34, 81, 81);
+        }
+
+        .box3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgba(19, 90, 152, 0.584);
+        }
+        .box3:hover{
+            background-color: rgba(64, 84, 101, 0.584);
+        }
+
+        .box4{
+            background-color: cadetblue;
+        }
+        .box4:hover{
+            background-color: rgb(15, 63, 65);
+        }
+        .box5{
+            background-color: burlywood;
+        }
+        .box5:hover{
+            background-color: rgb(94, 65, 29);
+        }
+
+        .box6{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgb(90, 90, 233);
+
+        }
+        .box6:hover{
+            background-color: rgb(49, 49, 92);
+        }
+
+
+        body{
+            background-color: rgb(40, 38, 38);
+        }
+       
+       
+       .container3{
+            display: grid;
+            grid-template-columns: 120px 240px; 
+            grid-template-rows: 70px 70px 140px 140px 70px;
+            gap: 10px;
+            /* border: 2px solid black; */
+            width: 400px;
+            height: 500px;
+            justify-content: center;
+            align-content: center;
+            /* background-color: blanchedalmond; */
+            position: absolute;
+            top: 50px;
+            left: 1000px;
+
+        }
+        .num{
+            /* border: 2px solid black; */
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        .num:hover{
+            font-size: 40px;
+            color: rgb(61, 49, 49);
+        }
+        .num1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(18, 242, 212);
+        }
+        .num1:hover{
+            background-color: rgb(34, 97, 87);
+        }
+        .num2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(129, 231, 129);
+        }
+        .num2:hover{
+            background-color: rgb(38, 98, 38);
+        }
+        .num3{
+            grid-row-start: 3;
+            grid-row-end: 5;
+            background-color: rgb(150, 250, 50);
+        }
+        .num3:hover{
+            background-color: rgb(89, 120, 58);
+        }
+        .num4{
+            background-color: rgba(18, 65, 74, 0.812);
+        }
+        .num4:hover{
+            background-color: rgba(78, 127, 138, 0.812);
+        }
+        .num5{
+            background-color: rgb(66, 66, 180);
+        }
+        .num5:hover{
+            background-color: rgb(96, 96, 130);
+        }
+        .num6{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgb(18, 242, 212);
+        }
+        .num6:hover{
+            background-color: rgb(51, 85, 81);
+        }
+
+
+        .container1{
+            display: grid;
+            /* grid-template-columns: auto auto auto auto; */
+            grid-template-columns: 200px 200px 100px 200px 200px;
+            grid-template-rows: 160px 120px 80px 200px;
+            /* grid-template-rows:auto auto auto ; */
+            gap: 10px;
+            /* justify-content: center; */
+            margin-top: 30px;
+            margin-left: 30px;
+            
+        }
+        
+       
+        #item1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: rgb(255, 0, 0);
+        }
+
+        #item1:hover{
+            background-color: rgb(119, 29, 29);
+        }
+
+        #item2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgb(0, 225, 255);
+        }
+
+        #item2:hover{
+            background-color: rgb(63, 106, 120);
+        }
+
+       #item3{
+        grid-column-start: 4;
+        grid-column-end: 6;
+        background-color: rgb(233, 167, 86);
+       }
+
+       #item3:hover{
+            background-color: rgb(119, 99, 45);
+        }
+
+
+       #item4{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: rgb(233, 167, 86);
+       }
+       #item4:hover{
+            background-color: rgb(119, 99, 45);
+        }
+
+       #item5{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: white;
+       }
+       #item5:hover{
+            background-color: rgb(225, 221, 207);
+        }
+
+       #item6{
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: rgb(255, 0, 0);
+       }
+
+       #item6:hover{
+            background-color: rgb(119, 29, 29);
+        }
+
+       #item7{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: white;
+       }
+       #item7:hover{
+            background-color: rgb(225, 221, 207);
+        }
+
+       #item8{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: rgb(255, 0, 0);
+       }
+       #item8:hover{
+            background-color: rgb(119, 29, 29);
+        }
+       #item9{
+        background-color: rgb(0, 225, 255);
+       }
+       #item9:hover{
+            background-color: rgb(63, 106, 120);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <div class="box box1">Header</div>
+        <div class="box box2">Sidebar</div>
+        <div class="box box3">Content-1</div>
+        <div class="box box4">Content-2</div>
+        <div class="box box5">Content-3</div>
+        <div class="box box6">Footer</div>
+    </div>
+
+    <div class="container3">
+        <div class="num num1">Header</div>
+        <div class="num num2">Navigation</div>
+        <div class="num num3">ASide</div>
+        <div class="num num4">Content</div>
+        <div class="num num5">Section</div>
+        <div class="num num6">Footer</div>
+    </div>
+
+    <div class="container1">
+        <div class="item" id="item1"></div>
+        <div class="item" id="item2"></div>
+        <div class="item" id="item3"></div>
+        <div class="item" id="item4"></div>
+        <div class="item" id="item5"></div>
+        <div class="item" id="item6"></div>
+        <div class="item" id="item7"></div>
+        <div class="item" id="item8"></div>
+        <div class="item" id="item9"></div>
+       </div> 
+
+    </div>
+</body>
+</html>
